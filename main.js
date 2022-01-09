@@ -37,10 +37,10 @@ let counter = 0;
 btn.addEventListener("click", () => {
     counter++;
     if (counter % 2 !== 0) {
-        btn.innerText = "close";
+        btn.innerHTML = "show";
         content.style.display = "none";
     } else {
-        btn.innerHTML = "show";
+         btn.innerText = "close";
         content.style.display = "block";
         if (name.toLowerCase() === "nawras" || name === "نورس") {
             content.style.backgroundColor = "purple";
